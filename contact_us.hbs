@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB 3</title>
+
+    </head>
+    <body>
+        <h1>Degree Programs</h1>
+        <form action="http://localhost:3000/process-contacts" method="POST">
+        <div>
+        First Name:
+        <input type="text" name="first_name"> <br>
+        </div>
+        <br>
+       <div>
+         Last Name:
+        <input type="text" name="last_name">
+       </div>
+        <br>
+        <div>
+            <label for="course_select">Choose your Degree Program:</label>
+            <br>
+            <div>
+                <select name="major" id="major" onchange="">
+                <option value="major">Please choose a major:</option>
+
+                <option name="apt"  value="APT">APT</option>
+                <option name="ist" value="IST">IST</option>
+             </select>
+            </div>
+            
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
